@@ -9,10 +9,10 @@ namespace SeABook.Model.DataBase
         public DbSet<Reader> Readers { get; set; } = null!;
         public DbSet<ReadingRoom> ReadingRooms { get; set; } = null!;
         public DbSet<Book> Books { get; set; } = null!;
+        public DbSet<Account> Accounts { get; set; } = null!;
         public SBDataBase()
         {
             Database.EnsureCreated();
-            
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
